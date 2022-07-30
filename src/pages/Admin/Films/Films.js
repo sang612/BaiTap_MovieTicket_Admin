@@ -14,7 +14,6 @@ import {
 } from "../../../redux/actions/QuanLyPhimAction";
 import { NavLink, useNavigate } from "react-router-dom";
 
-
 const Films = () => {
   const { arrFilmDefault } = useSelector((state) => state.QuanLyPhimReducer);
 
@@ -118,9 +117,14 @@ const Films = () => {
       render: (text, film) => {
         return (
           <Fragment>
-            {film.moTa.length > 300
+            {window.innerWidth < 480 ? film.moTa.length > 30
+              ? film.moTa.substr(0, 30) + "..."
+              : film.moTa : film.moTa.length > 300
               ? film.moTa.substr(0, 300) + "..."
               : film.moTa}
+            {/* {film.moTa.length > 300
+              ? film.moTa.substr(0, 300) + "..."
+              : film.moTa} */}
           </Fragment>
         );
       },

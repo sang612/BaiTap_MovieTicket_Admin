@@ -1,15 +1,36 @@
-.ant-input-search > .ant-input-group > .ant-input-group-addon:last-child .ant-input-search-button {
+.ant-input-search
+  > .ant-input-group
+  > .ant-input-group-addon:last-child
+  .ant-input-search-button {
   background-color: black;
 }
 
-.ant-input-search > .ant-input-group > .ant-input-group-addon:last-child .ant-input-search-button:hover {
-    background-color: rgb(38, 148, 233);;
+.ant-input-search
+  > .ant-input-group
+  > .ant-input-group-addon:last-child
+  .ant-input-search-button:hover {
+  background-color: rgb(38, 148, 233);
 }
 
-.ant-switch{
-    background-color: grey;
+.ant-switch {
+  background-color: grey;
 }
 
-.ant-switch-checked, .ant-switch-checked:focus {
-    background-color: rgb(38, 148, 233);
+.ant-switch-checked,
+.ant-switch-checked:focus {
+  background-color: rgb(38, 148, 233);
+}
+
+@media only screen and (max-width: 480px) {
+    .ant-table-container table > thead > tr:first-child th:first-child {
+        padding: 0;
+    }
+    .ant-table-thead th.ant-table-column-has-sorters {
+        padding: 0 5px;
+    }
+  .ant-table-tbody > tr > td,
+  .ant-table tfoot > tr > th,
+  .ant-table tfoot > tr > td {
+    padding: 0 2px;
+  }
 }
