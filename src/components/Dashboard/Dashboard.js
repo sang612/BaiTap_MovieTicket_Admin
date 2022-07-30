@@ -189,18 +189,18 @@ const Dashboard = (props) => {
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
               <li className="nav-item">
                 <a
-                  className="px-1 pt-2 flex items-center text-xs  font-bold leading-snug text-white hover:opacity-75"
+                  className="px-1 pt-2 flex items-center text-xs font-bold leading-snug text-white hover:opacity-75"
                   href="#pablo"
                 >
                   <i className="fa-solid fa-user "></i>
-                  <span className="ml-2 text-base">Người dùng</span>
+                  <span className="ml-2 text-sm">Người dùng</span>
                 </a>
               </li>
 
               <li className="nav-item ml-1">
                 <NavLink
                   to={"admin/users"}
-                  className="px-1 pt-2 flex items-center text-xs  font-bold leading-snug text-white hover:opacity-75"
+                  className="px-1 pt-2 flex items-center text-xs font-bold leading-snug text-white hover:opacity-75"
                   href="#pablo"
                 >
                   <i className="fa-solid fa-arrow-right"></i>
@@ -222,7 +222,7 @@ const Dashboard = (props) => {
                   href="#pablo"
                 >
                   <i className="fa-solid fa-film "></i>
-                  <span className="ml-2 text-base">Phim</span>
+                  <span className="ml-2 text-sm">Phim</span>
                 </a>
               </li>
 
@@ -257,7 +257,7 @@ const Dashboard = (props) => {
                   }}
                 >
                   <i className="fa-solid fa-right-from-bracket "></i>
-                  <span className="ml-2 text-base">Đăng Xuất</span>
+                  <span className="ml-2 text-sm">Đăng Xuất</span>
                 </a>
               </li>
             </ul>
