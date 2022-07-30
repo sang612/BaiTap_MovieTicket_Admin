@@ -245,6 +245,21 @@ const Dashboard = (props) => {
                   <span className="ml-2">Thêm mới</span>
                 </NavLink>
               </li>
+              <hr className="my-3" />
+              <li className="nav-item">
+                <a
+                  className="px-1 pt-2 flex items-center text-xs  font-bold leading-snug text-white hover:opacity-75"
+                  href="#pablo"
+                  onClick={() => {
+                    if (window.confirm("Bạn thật sự muốn đăng xuất?")) {
+                      logOutAction();
+                    }
+                  }}
+                >
+                  <i className="fa-solid fa-right-from-bracket "></i>
+                  <span className="ml-2 text-base">Đăng Xuất</span>
+                </a>
+              </li>
             </ul>
           </div>
         </div>
