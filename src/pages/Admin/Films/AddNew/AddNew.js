@@ -92,7 +92,7 @@ const AddNew = () => {
       setTimeout(() => {
         formik.setFieldValue("hinhAnh", file);
         alert("Đã up ảnh xong");
-      }, 1000);
+      }, 1500);
     }
   };
 
