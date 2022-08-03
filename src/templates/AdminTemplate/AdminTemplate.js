@@ -1,7 +1,6 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import Dashboard from "../../components/Dashboard/Dashboard";
-import  "../../_Playground/CSS/main.css"
 
 const AdminTemplate = () => {
   return (
